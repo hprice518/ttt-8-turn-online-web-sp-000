@@ -1,4 +1,4 @@
-require_relative '../lib/turn'
+
 
 def turn(move) 
   puts "Please enter 1-9:"
