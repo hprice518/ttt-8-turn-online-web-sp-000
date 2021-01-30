@@ -1,11 +1,9 @@
 
 
-def turn(move) 
+def turn(board) 
   puts "Please enter 1-9:"
+  input = gets.strip
 end 
-
-
-#board = [" "," "," "," "," "," "," "," "," "]
 
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
@@ -38,3 +36,4 @@ end
 def move(board,input,draw = "X") 
   board[input] = draw
 end
+
