@@ -7,11 +7,12 @@ def turn(board)
   valid_move?(board, index)
     until valid_move?(board, index) == false 
        puts "Please enter 1-9:"
-       move(board,input,draw = "X") 
+       input = gets.strip
     end 
   
   display_board(board)
-  
+  move(board,input,draw = "X") 
+end
 end 
 
 def display_board(board)
