@@ -4,19 +4,14 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
   
-  #valid_move?(board, index)
-  #  until valid_move?(board, index) == false 
-  #     puts "Please enter 1-9:"
-  #     input = gets.strip
-  #  end 
+  valid_move?(board, index)
+    until valid_move?(board, index) == false 
+       puts "Please enter 1-9:"
+       input = gets.strip
+    end 
   
-  if valid_move?(board, index) == true
-      move(board,input,draw = "X") 
-  else
-    puts "Please enter 1-9"
-  end
   display_board(board)
-  #move(board,input,draw = "X") 
+  move(board,input,draw = "X") 
 end 
 
 def display_board(board)
